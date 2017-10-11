@@ -2,7 +2,9 @@ import React, { Component} from 'react';
 import { connect } from 'react-redux';
 import { fetchPost, deletePost} from '../actions';
 import { Link} from 'react-router-dom';
-
+import Navbar from './navbar';
+import Header from './header';
+import Footer from './footer';
 
 
 
@@ -32,17 +34,23 @@ class PostsShow extends Component {
 
         return (
             <div>
-                 <Link to='/' className='btn btn-primary'>Back to Index</Link>
-                 <button
-                    className='btn btn-danger pull-xs-rigth'
-                    onClick={this.onDeleteClick.bind(this)}
+                <Navbar />
+                <Header />
 
-                 >
-                     Delete Post
+                <div>
+                    <Link to='/' className='btn btn-primary'>Back to Index</Link>
+                    <button
+                        className='btn btn-danger pull-xs-rigth'
+                        onClick={this.onDeleteClick.bind(this)}
+
+                    >
+                        Delete Post
                  </button>
-                <h3>{post.title}</h3>
-                <h6>Categories: {post.categories}</h6>
-                <p>{post.content}</p>
+                    <h3>{post.title}</h3>
+                    <h6>Categories: {post.categories}</h6>
+                    <p>{post.content}</p>
+                </div>
+                <Footer />
             </div>
         );
     }

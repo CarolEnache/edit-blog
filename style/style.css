@@ -354,5 +354,5 @@ footer {
   background-color: #0085A1; }
 
 .ttt{
-  background-image: url('img/home-bg.jpg')
+  background-image: url('img/home-bg.jpg') !important;  
 }

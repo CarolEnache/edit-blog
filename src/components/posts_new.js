@@ -15,7 +15,7 @@ class PostsNew extends Component{
             <div className={className}>
                 <label>{field.label}</label>
                 <input
-                    className='form-control' 
+                    className='form-control'
                     type='text'
                     {...field.input}
                 />
@@ -23,6 +23,7 @@ class PostsNew extends Component{
                     {touched ? error : ''}
                 </div>
             </div>
+
         )
     }
 
