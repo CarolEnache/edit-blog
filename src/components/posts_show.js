@@ -37,7 +37,7 @@ class PostsShow extends Component {
                 <Navbar />
                 <Header />
 
-                <div>
+                <div className='container'>
                     <Link to='/' className='btn btn-primary'>Back to Index</Link>
                     <button
                         className='btn btn-danger pull-xs-rigth'

@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
+import bootstrap from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchPosts } from '../actions';
@@ -31,7 +32,7 @@ class PostIndex extends Component{
             <div>
                 <Navbar />
                 <Header />
-                <div className="containerr">
+                <div className="container">
                     <div className="row">
                         <div className="col-lg-8 col-md-10 mx-auto">
                             <div className='text-xs-right'>
