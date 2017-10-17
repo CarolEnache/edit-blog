@@ -24,12 +24,14 @@
     "node-sass": "^4.5.3",
     "react-addons-test-utils": "^0.14.7",
     "sass-loader": "^6.0.6",
+    "unique-id-mixin": "^1.0.0",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
     "axios": "^0.16.2",
     "babel-preset-stage-1": "^6.1.18",
+    "bootstrap": "^4.0.0-beta",
     "lodash": "^3.10.1",
     "react": "^0.14.3",
     "react-bootstrap": "^0.31.3",

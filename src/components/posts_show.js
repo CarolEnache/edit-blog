@@ -2,7 +2,7 @@ import React, { Component} from 'react';
 import { connect } from 'react-redux';
 import { fetchPost, deletePost} from '../actions';
 import { Link} from 'react-router-dom';
-import Navbar from './navbar';
+import NavBarMenu from './navbar';
 import Header from './header';
 import Footer from './footer';
 
@@ -34,9 +34,8 @@ class PostsShow extends Component {
 
         return (
             <div>
-                <Navbar />
+                <NavBarMenu />
                 <Header />
-
                 <div className='container'>
                     <Link to='/' className='btn btn-primary'>Back to Index</Link>
                     <button
